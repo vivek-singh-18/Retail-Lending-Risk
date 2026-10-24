@@ -1,0 +1,4 @@
+city_tier,customer_count,total_loans,total_exposure,avg_income,default_rate_pct
+Tier_1,3060,5815,4312480000,58107.22,1.72
+Tier_2,2689,5237,4012132000,58308.94,1.55
+Tier_3,1887,3652,2727449000,58502.11,1.86

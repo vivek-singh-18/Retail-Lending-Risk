@@ -1,0 +1,13 @@
+# Risk Thresholds Configuration
+default_probability:
+  low_risk_max: 0.15
+  moderate_risk_max: 0.35
+  high_risk_max: 0.60
+  cost_optimal_threshold: 0.53
+
+policy_thresholds:
+  max_permissible_dti: 0.50
+  high_income_max_dti: 0.60
+  hard_dti_decline: 0.65
+  min_credit_score: 600
+  recent_delinquency_max_dpd: 30

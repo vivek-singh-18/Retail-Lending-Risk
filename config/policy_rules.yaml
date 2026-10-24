@@ -1,0 +1,43 @@
+# Policy Rules Configuration
+rules:
+  - name: HARD_DECLINE_SUBPRIME_CREDIT
+    condition: "credit_score < 600"
+    action: "DECLINE"
+    reason: "Credit score below minimum eligible cutoff (600)."
+    citation: "[Document: loan_eligibility.pdf, Section: 2.3, Page: 1]"
+
+  - name: HARD_DECLINE_EXCESSIVE_DTI
+    condition: "dti > 0.65"
+    action: "DECLINE"
+    reason: "Calculated DTI exceeds absolute maximum threshold of 65%."
+    citation: "[Document: underwriting_guidelines.pdf, Section: 1.3, Page: 1]"
+
+  - name: HARD_DECLINE_RECENT_CRITICAL_DELINQUENCY
+    condition: "recent_delinquency == 1 and delinquency_count >= 3"
+    action: "DECLINE"
+    reason: "Multiple historical delinquencies with recent delinquency event."
+    citation: "[Document: delinquency_policy.pdf, Section: 1.2, Page: 1]"
+
+  - name: MANUAL_REVIEW_HIGH_DTI
+    condition: "dti > 0.50 and dti <= 0.65"
+    action: "MANUAL_REVIEW"
+    reason: "DTI exceeds standard 50% limit requiring Underwriter sign-off."
+    citation: "[Document: underwriting_guidelines.pdf, Section: 1.1, Page: 1]"
+
+  - name: MANUAL_REVIEW_RECENT_DELINQUENCY
+    condition: "recent_delinquency == 1"
+    action: "MANUAL_REVIEW"
+    reason: "Recent delinquency recorded within past 6 months."
+    citation: "[Document: delinquency_policy.pdf, Section: 1.1, Page: 1]"
+
+  - name: MANUAL_REVIEW_HIGH_ML_RISK
+    condition: "default_probability >= 0.35 and default_probability < 0.60"
+    action: "MANUAL_REVIEW"
+    reason: "Model predicted default probability is in High Risk band."
+    citation: "[Document: risk_review_policy.pdf, Section: 1.3, Page: 1]"
+
+  - name: HARD_DECLINE_VERY_HIGH_ML_RISK
+    condition: "default_probability >= 0.60"
+    action: "DECLINE"
+    reason: "Model predicted default probability exceeds Very High Risk cutoff (60%)."
+    citation: "[Document: risk_review_policy.pdf, Section: 1.4, Page: 1]"

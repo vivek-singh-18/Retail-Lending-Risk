@@ -1,0 +1,4 @@
+loan_type,total_loans,total_disbursed_volume,avg_interest_rate,default_count,default_rate_pct
+Housing_Loan,3912,6895700000,8.79,76,1.94
+Personal_Loan,7653,2987640000,14.29,124,1.62
+Used_Car_Loan,3139,1168721000,11.79,49,1.56

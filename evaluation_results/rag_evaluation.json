@@ -1,0 +1,30 @@
+{
+  "Dense_Only": {
+    "Recall@K": 1.0,
+    "Precision@K": 0.24,
+    "MRR": 0.8767,
+    "Faithfulness": 0.98,
+    "Citation_Accuracy": 0.8679
+  },
+  "Hybrid_RRF": {
+    "Recall@K": 1.0,
+    "Precision@K": 0.24,
+    "MRR": 0.8967,
+    "Faithfulness": 0.98,
+    "Citation_Accuracy": 0.8877
+  },
+  "Hybrid_Plus_Reranker": {
+    "Recall@K": 1.0,
+    "Precision@K": 0.24,
+    "MRR": 0.8767,
+    "Faithfulness": 0.98,
+    "Citation_Accuracy": 0.8679
+  },
+  "Hybrid_Reranker_MetadataFiltered": {
+    "Recall@K": 1.0,
+    "Precision@K": 1.0,
+    "MRR": 1.0,
+    "Faithfulness": 0.98,
+    "Citation_Accuracy": 0.99
+  }
+}

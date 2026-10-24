@@ -1,0 +1,5 @@
+income_segment,customer_count,total_loans,total_disbursed,default_rate_pct
+1. Low Income (<30k),1526,3009,869204000,1.76
+2. Middle Income (30k-75k),4281,8240,5229389000,1.89
+3. Upper Middle (75k-150k),1600,3030,3927080000,1.16
+4. High Net Worth (>150k),229,425,1026388000,1.18

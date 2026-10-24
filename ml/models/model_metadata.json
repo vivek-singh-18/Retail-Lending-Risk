@@ -1,0 +1,53 @@
+{
+  "best_model_name": "LogisticRegression",
+  "optimal_threshold": 0.53,
+  "metrics": {
+    "LogisticRegression": {
+      "val_roc_auc": 0.9757,
+      "val_pr_auc": 0.6601,
+      "test_roc_auc": 0.9662,
+      "test_pr_auc": 0.6458,
+      "test_brier_score": 0.0698
+    },
+    "RandomForest": {
+      "val_roc_auc": 0.9648,
+      "val_pr_auc": 0.5317,
+      "test_roc_auc": 0.9651,
+      "test_pr_auc": 0.6049,
+      "test_brier_score": 0.0511
+    },
+    "XGBoost": {
+      "val_roc_auc": 0.9682,
+      "val_pr_auc": 0.6266,
+      "test_roc_auc": 0.9635,
+      "test_pr_auc": 0.635,
+      "test_brier_score": 0.047
+    }
+  },
+  "numerical_features": [
+    "age",
+    "monthly_income",
+    "employment_length",
+    "credit_score",
+    "active_loans",
+    "closed_loans",
+    "credit_utilization",
+    "delinquency_count",
+    "recent_delinquency",
+    "requested_amount",
+    "annual_income",
+    "lti",
+    "emi_to_income",
+    "dti",
+    "income_stability_num",
+    "loan_burden_index",
+    "credit_score_norm",
+    "emp_age_ratio"
+  ],
+  "categorical_features": [
+    "city_tier",
+    "employment_type",
+    "loan_type",
+    "employer_type"
+  ]
+}

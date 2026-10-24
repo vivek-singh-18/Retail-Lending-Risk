@@ -1,0 +1,4 @@
+severity,incident_count,impacted_borrowers,dpd_30_59,dpd_60_89,dpd_90_plus
+Critical,504,206,0,0,504
+Moderate,247,153,247,0,0
+Severe,245,154,0,245,0
